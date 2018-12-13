@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二级菜单动态生成内容</title>
+    <link href="../css/menu.css" type="text/css" rel="stylesheet">
+    <link href="../css/jquery.page.css" rel="stylesheet" type="text/css">
+    <link href="../css/page.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="box">
+        <ul class="banner">
+            <li class="banner1">电话咨询
+                <div class="banner1-b">
+                    <img src="../images/call.png">
+                    <span>100-100-100</span>
+                </div>
+            </li>
+            <li class="banner2">关注我们
+                <div class="banner2-b">
+                    <img src="../images/wx_03.gif">
+                </div>
+            </li>
+            <li class="banner3">在线咨询</li>
+            <li class="banner4"><a href="#top">返回顶部</a></li>
+        </ul>
+        <div class="header-box">
+            <header>
+                <div class="header-left">
+                    <i></i>
+                    <span>全场免运费</span>
+                </div>
+                <div class="header-right">
+                    <div class="header-car">
+                        <i></i>
+                        <span></span>
+                    </div>
+                    <div class="usermsg">
+                        <a href="#">登录/注册</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="middle-box">
+            <div class="middle" id="#top">
+                <h1>
+                    <img src="../images/logo.png">
+                </h1>
+                <div class="nav">
+                    <div class="nav-left">
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li class="skin"><a href="#">护肤</a>
+                                <div class="menu">
+                                    <div class="menu1">
+                                        <div class="menu1-top"><span>按系列</span></div>
+                                            <ul class="menu1-ul">
+                                                <li>
+                                                    <a href="#"><img src="../images/18.png"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../images/6.png"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../images/24.png"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../images/13.jpg"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../images/14.png"></a>
+                                                </li>
+                                                <li>
+                                                   <a href="#"> <img src="../images/25.png"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../images/22.jpg"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="../images/11.jpg"></a>
+                                                </li>
+                                                <li>
+                                                   <a href="#"> <img src="../images/1.jpg"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu2">
+                                            <div class="menu2-top"><span>按种类</span></div>
+                                            <ul class="menu2-ul">
+                                                <li><a href="#">卸妆清洁</a></li>
+                                                <li><a href="#">爽肤水</a></li>
+                                                <li><a href="#">精华</a></li>
+                                                <li><a href="#">乳液</a></li>
+                                                <li><a href="#">面霜</a></li>
+                                                <li><a href="#">眼唇护理</a></li>
+                                                <li><a href="#">面膜</a></li>
+                                                <li><a href="#">护肤套装</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu3">
+                                            <div class="menu3-top"><span>按关心问题</span></div>
+                                            <ul class="menu3-ul">
+                                                <li><a href="#">干燥缺水</a></li>
+                                                <li><a href="#">色斑暗沉</a></li>
+                                                <li><a href="#">轻熟肌 弹性流失</a></li>
+                                                <li><a href="#">熟龄肌 深度老化</a></li>
+                                                <li><a href="#">毛孔粗大</a></li>
+                                                <li><a href="#">眼周松弛</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="makeup"><a href="#">彩妆</a>
+                                    <div class="make">
+                                        <div class="make1">
+                                            <div class="make1-top"><span>按系列</span></div>
+                                            <ul class="make1-ul">
+                                                <li><a href="#"><img src="../images/9.jpg"></a></li>
+                                                <li><a href="#"><img src="../images/eye.jpg"></a></li>
+                                                <li><a href="#"><img src="../images/17.jpg"></a></li>
+                                                <li><a href="#"><img src="../images/20.jpg"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="make2">
+                                            <div class="make2-top"><span>面部</span></div>
+                                            <ul class="make2-ul">
+                                                <li><a href="#">妆前乳</a></li>
+                                                <li><a href="#">粉底液</a></li>
+                                                <li><a href="#">遮瑕</a></li>
+                                                <li><a href="#">蜜粉</a></li>
+                                                <li><a href="#">腮红</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="make3">
+                                            <div class="make3-top"><span>眼部</span></div>
+                                            <ul class="make3-ul">
+                                                <li><a href="#">眼影</a></li>
+                                                <li><a href="#">眼线</a></li>
+                                                <li><a href="#">睫毛膏</a></li>
+                                                <li><a href="#">眉笔</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="make4">
+                                            <div class="make4-top"><span>唇部</span></div>
+                                            <ul class="make4-ul">
+                                                <li><a href="#">唇膏</a></li>
+                                                <li><a href="#">唇线</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="make5">
+                                            <div class="make5-top"><span>彩妆其他</span></div>
+                                            <ul class="make5-ul">
+                                                <li><a href="#">粉盒</a></li>
+                                                <li><a href="#">刷子</a></li>
+                                                <li><a href="#">工具</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">男士</a></li>
+                                <li><a href="#">防晒</a></li>
+                                <li><a href="#">香氛</a></li>
+                                <li class="nine"><a href="official.html">官网臻享</a></li>
+                                <li class="nine"><a href="famous.html">明星产品</a></li>
+                                <li class="nine"><a href="reason.html">官网购物理由</a></li>
+                                <li class="nine"><a href="#">品牌故事</a></li>
+                                <li class="nine"><a href="#">专柜导航</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right">
+                        <input type="text" id="search" placeholder="商品搜索">
+                        <a href="#"><i></i></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <h5></h5>
+                    <h2>护肤</h2>
+                    <div class="page"></div>
+                    <div class="sort">
+                        <span></span>
+                        <div class="sort-con">
+                            <i class="i1"></i>
+                            <span>排序</span>
+                            <ul>
+                                <li>价格从低到高</li>
+                                <li>价格从高到低</li>
+                                <li>销量从高到低</li>
+                                <li>销量从低到高</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content-left">
+                            <div class="li1">
+                                <input type="checkbox" id="a" hidden>
+                                <label for="a">按种类</label>
+                                <ul class="type">
+                                    <li>卸妆清洁</li>
+                                    <li>爽肤水</li>
+                                    <li>精华</li>
+                                    <li>乳液</li>
+                                    <li>面霜</li>
+                                    <li>眼唇护理</li>
+                                    <li>面膜</li>
+                                    <li>护肤套装</li>
+                                </ul>
+                            </div>
+                            <div class="li2">
+                                <input type="checkbox" id="b" hidden>
+                                <label for="b">按系列</label>
+                                <ul class="series">
+                                    <li>红妍肌活精华系列</li>
+                                    <li>时光琉璃御藏系列</li>
+                                    <li>悦薇珀翡系列</li>
+                                    <li>盼丽风姿系列</li>
+                                    <li>新透美白肌</li>
+                                    <li>青春日和系列</li>
+                                    <li>百优系列</li>
+                                    <li>红色蜜露</li>
+                                    <li>亲肤系列</li>
+                                </ul>
+                            </div>
+                            <div class="li3">
+                                <input type="checkbox" id="c" hidden>
+                                <label for="c">按关心问题</label>
+                                <ul class="care-point">
+                                    <li>干燥 缺水</li>
+                                    <li>色斑 暗沉</li>
+                                    <li>轻熟肌 弹性流失</li>
+                                    <li>熟龄肌 深度老化</li>
+                                    <li>毛孔粗大</li>
+                                    <li>眼周松弛</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <ul>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-box">
+            <footer>
+                <ul>
+                    <li>
+                        <a href="#">美容常见问题</a>
+                    </li>
+                    <li>
+                        <a href="#">网站常见问题</a>
+                    </li>
+                    <li>
+                        <a href="#">免责：隐私权保护</a>
+                    </li>
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="#">服务条款</a>
+                    </li>
+                </ul>
+                <span class="share">分享网站到</span>
+                <a href="#"><i></i></a>
+                <div class="footer-content">
+                    <p>
+                        Copyright(c) 2015资生堂(中国)投资有限公司；Shiseido China Co., Ltd. All rights reserved
+                    </p>
+                    <p>
+                        沪ICP备10203872号-1 企业营业执照 SHISEIDO资生堂官方网站暨网上商城 全国咨询热线：400-821-6076
+                    </p>
+                    <p>
+                        专柜以及促销信息查询→全国免费咨询热线： 800-820-1010
+                    </p>
+                    <p class="p4">
+                        <i></i>
+                        沪公网安备 31011502007430号
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/wrap.js"></script>
+<script src="../js/page.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/function.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.page.js"></script>
+<script>
+   //点击注册登录跳转
+   $(".usermsg a").click(function(){
+        window.location.href = "login.html";
+    })
+    //取cookie做登录名
+    var userLoginId = getCookie("userLoginId");
+    var username = getCookie("username");
+    if(userLoginId){
+        $(".usermsg a").html("欢迎"+username);
+        $(".usermsg").append($("<span>退出</span>"));
+        $(".usermsg span").click(function(){
+            setCookie("userLoginId",userLoginId,-10);
+            setCookie("username",username,-10);
+            $(this).remove();
+            $(".usermsg a").html("登录/注册");
+            window.location.href = "login.html";
+        })
+        $(".usermsg a").append($("<a href='personal.html'>个人中心</a>"));
+    }else{
+        $(".usermsg a").html("登录/注册");
+    }
+    
+    //点击进入购物车
+    if(userLoginId){
+        $(".header-right .header-car").click(function(){
+            window.location.href = "payforgoods.html";
+            })
+    }else{
+        wrapBox.init({
+            width:300,
+            height:70,
+            headerTip:"提示",
+            headerContent:`您还没有登录,是否立即登录`,
+            cancelContent:{
+                html:"是个游客",
+                fn: function () {
+                //更新数据库数据
+                }
+            },
+            confirmContent:{
+                html:"立即登录",
+                    fn: function () {
+                        window.location.href = "login.html"
+                    }
+                }
+        })
+    }
+    //显示购物车件数
+if(userLoginId){
+    $.ajax({
+        type:"get",
+        url:"../php/getnumincar.php",
+        data:{
+            userLoginId:userLoginId
+        },
+        dataType:"json",
+        success:function(result){
+            $(".header-car span").html(result["num"] + "件商品");
+        }
+    })
+}else{
+    $(".header-car span").html("请登录");
+}
+    //根据goodskey动态生成
+    var key = decodeURI(location.search.split("=")[1]);
+    $(".content-right ul").html();
+    $.ajax({
+        type:"get",
+        url:"../php/goodsbytable.php",
+        data:{
+            table:key
+        },
+        dataType:"json",
+        success:function(result){
+            getData(result);
+        }
+    })
+    // var key1 = decodeURI(location.search.split("="[1]));
+    // getNum(key1);
+    $(".content-right ul").html();
+    $.ajax({
+        type:"get",
+        url:"../php/searchgoods.php",
+        data:{
+            key:key
+        },
+        dataType:"json",
+        success:function(result){
+            getData(result);
+        }
+    })    
+    //搜索事件
+    $(".nav-right i").click(function(){
+        var key = $(".nav-right #search").val();
+        window.location.href = "menu.html?key=" + key;
+    })
+    // //左侧下拉框点击事件
+    $(".content-left .li1 .type li").click(function(){
+       // alert($(this).index())
+        var index = $(this).index();
+        switch(index){
+            case 0:
+                    var table = "qingjie";
+                    contentLeft(table);
+                    getTypeNum(table);
+                    $(".main h5").html("首页 >> 护肤 >> 清洁卸妆");
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 1 :
+                    var table = "shaungfu"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    $(".main h5").html("首页 >> 护肤 >> 爽肤水");
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 2 :
+                    var table = "jinghua"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    $(".main h5").html("首页 >> 护肤 >> 精华");
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 3 :
+                    var table = "ruye"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    $(".main h5").html("首页 >> 护肤 >> 乳液");
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 4 :
+                    var table = "mianshuang"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    $(".main h5").html("首页 >> 护肤 >> 面霜");
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 5 :
+                    var table = "yanchun"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    $(".main h5").html("首页 >> 护肤 >> 眼唇护理");
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            default:
+                    var table = "mianmo"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    $(".main h5").html("首页 >> 护肤 >> 面膜");
+                    window.location.href = "menu.html?pageKey=" + table;
+        }
+    }) 
+    // //导航下拉菜单效果
+    $(".menu2 .menu2-ul li").click(function(){
+        var index = $(this).index();
+        switch(index){
+            case 0:
+                    var table = "qingjie";
+                    contentLeft(table);
+                    getTypeNum(table);
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 1 :
+                    var table = "shaungfu"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 2 :
+                    var table = "jinghua"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 3 :
+                    var table = "ruye"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 4 :
+                    var table = "mianshuang"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            case 5 :
+                    var table = "yanchun"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    window.location.href = "menu.html?pageKey=" + table;
+            break;
+            default:
+                    var table = "mianmo"; 
+                    contentLeft(table);
+                    getTypeNum(table);
+                    window.location.href = "menu.html?pageKey=" + table;
+        }
+    })
+
+    function getData(result){
+        var content = document.querySelector(".content-right ul");
+        content.innerHTML = "";
+        var html = "";
+            if(result){
+                result.map(function(item){
+                    var goodsname = item["goodsname"];
+                    var goodsid = item["goodsid"];
+                    var goodsbig = item["goodsbig"];
+                    var goodsimg = item["goodsimg"];
+                    var goodsprice = item["goodsprice"];
+                    html += `
+                                <li>
+                                    <a>
+                                        <img src="../images/${goodsimg}">
+                                        <span class="goodsname">${goodsname}</span>
+                                    </a>
+                                    <span class="goodsbig">${goodsbig}</span>
+                                    <span class="goodsprice">${goodsprice}</span>
+                                    <span class="addgoods">加入购物车</span>
+                                    <a class="detail">详情</a>
+                                </li>
+                            `;
+                })
+            }
+            $(".content-right ul").append(html);
+            $(".content-right ul li a").click(function(){
+                // alert("111");
+                var goodsname = $(this).children(".goodsname").html();
+                $.ajax({
+                    type:"get",
+                    url:"../php/goodsname.php",
+                    data:{
+                        goodsname:goodsname
+                    },
+                    dataType:"json",
+                    success:function(result){
+                        let id = result["goodsid"];
+                        window.location.href = "goods.html?goodsid=" + id;
+                    }
+                })
+            })
+            getNum(table);
+            $(".content-right ul li .detail").click(function(){
+                var goodsname = $(this).siblings().children(".goodsname").html();
+                    $.ajax({
+                    type:"get",
+                    url:"../php/goodsname.php",
+                    data:{
+                        goodsname:goodsname
+                    },
+                    dataType:"json",
+                    success:function(result){
+                        let id = result["goodsid"];
+                        window.location.href = "goods.html?goodsid=" + id;
+                    }
+                })  
+            })
+            $(".content-right ul li .addgoods").click(function(){
+                var goodsname = $(this).siblings().children(".goodsname").html();
+                    if(userLoginId){
+                        $.ajax({
+                            type:"get",
+                            url:"../php/goodsname.php",
+                            data:{
+                                goodsname:goodsname
+                            },
+                            dataType:"json",
+                            success:function(result){
+                                var goodsid = result["goodsid"];
+                                var goodsname = result["goodsname"];
+                                var goodsprice = result["goodsprice"];
+                                var goodsimg = result["goodsimg"];
+                                //更新数据库数据
+                                $.ajax({
+                                    type:"get",
+                                    url:"../php/addgoods.php",
+                                    data:{
+                                        userLoginId:userLoginId,
+                                        goodsid:goodsid,
+                                        goodsname:goodsname,
+                                        goodsprice:goodsprice,
+                                        goodsimg:goodsimg,
+                                        goodsnum:1
+                                    },
+                                    dataType:"json",
+                                    success:function(str){
+                                        if(str["code"] == 1){
+                                            //新增成功
+                                            
+                                            wrapBox.init({
+                                                width:300,
+                                                height:70,
+                                                headerTip:"提示",
+                                                headerContent:`加入购车成功`,
+                                                cancelContent:{
+                                                    html:"返回页面",
+                                                    fn: function () {
+                                                        //更新数据库数据
+                                                    }
+                                                },
+                                                confirmContent:{
+                                                    html:"进入购物车",
+                                                    fn: function () {
+                                                        if(userLoginId){
+                                                            window.location.href = "payforgoods.html"
+                                                        }else{
+                                                            
+                                                        }
+                                                    }
+                                                }
+                                            });
+                                        }else{
+                                        wrapBox.init({
+                                            width:300,
+                                            height:70,
+                                            headerTip:"提示",
+                                            headerContent:`加入购车失败`
+                                        }) 
+                                        }
+                                    }
+                                })
+                            }
+                        })
+                }else{
+                    wrapBox.init({
+                        width:300,
+                        height:70,
+                        headerTip:"提示",
+                        headerContent:`您还没有登录,是否立即登录`,
+                        cancelContent:{
+                            html:"是个游客",
+                            fn: function () {
+                            //更新数据库数据
+                            }
+                        },
+                        confirmContent:{
+                            html:"立即登录",
+                                fn: function () {
+                                    window.location.href = "login.html"
+                                }
+                            }
+                    }) 
+                }
+            })
+
+    }
+    // //处理其他页面通过跳转进来的显示数据
+    var clickIndex;
+    var table = location.search.split("=")[1];
+    contentLeft(table);
+    //搜索数据的总条数
+        // var key = decodeURI(location.search.split("=")[1]);
+        getTotalNum(key);
+    //分页
+    new Page(".page",{
+        totalNum:20,
+        showNum:5,
+        pageNum:3,
+        callback:function(index){
+           clickIndex = index;
+        }
+    });
+  //DESC 降序
+  //价格从低到高
+  var currentKey = decodeURI(location.search.split("=")[1]);
+  var method = "goodsprice";
+    //价格从高到底
+  $(".sort-con ul li").eq(1).click(function(){
+      let order1 = "desc";
+      paixu(currentKey,method,order1);
+  })
+  $(".sort-con ul li").eq(1).click(function(){
+      let order1 = "desc";
+      tablepaixu(method,order1,currentKey);
+  })
+  $(".sort-con ul li").eq(0).click(function(){
+      let order = "asc";
+      paixu(currentKey,method,order);
+  })
+  $(".sort-con ul li").eq(0).click(function(){
+     let order = "asc";
+      tablepaixu(method,order,currentKey);
+    })
+    function paixu(key,method,order){
+        $(".content-right ul").html();
+        $.ajax({
+            type:"get",
+            url:"../php/paixu.php",
+            data:{
+                key:currentKey,
+                method:method,
+                order:order,
+            },
+            dataType:"json",
+            success:function(result){
+                getData(result);
+            }
+        })
+    }
+   
+    function tablepaixu(method,order,table){
+        $(".content-right ul").html();
+        $.ajax({
+            type:"get",
+            url:"../php/paixutable.php",
+            data:{
+                method:method,
+                order:order,
+                table:table
+            },
+            dataType:"json",
+            success:function(result){
+                getData(result);
+            }
+        })
+    }
+ </script>
+</html>

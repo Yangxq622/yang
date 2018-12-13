@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.page{
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.page .page-prev,.page .page-next{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 60px;
+    background: #53cac3;
+}
+.page-prev.disabled, .page-next.disabled{
+    background: #cdcdcd;
+}
+.page .page-content{
+    float: left;
+    line-height: 30px;
+}
+.page .page-content li{
+    float: left;
+    line-height: 30px;
+    width: 40px;text-align: center;
+    background: #4ecde4;
+}
